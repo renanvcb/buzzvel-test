@@ -1,12 +1,23 @@
 import Link from "next/link";
+import { IoMenuOutline } from "react-icons/io5";
 
-export function Navbar() {
+interface NavbarProps {
+  toggleSidebar: () => void;
+}
+
+export function Navbar({ toggleSidebar }: NavbarProps) {
   return (
-    <nav className="hidden md:flex md:space-x-4">
-      <Link href="#">Home</Link>
-      <Link href="#">About</Link>
-      <Link href="#">Services</Link>
-      <Link href="#">Contact</Link>
+    <nav>
+      <div className="hidden md:flex md:space-x-4">
+        <Link href="#">Home</Link>
+        <Link href="#">About</Link>
+        <Link href="#">Services</Link>
+        <Link href="#">Contact</Link>
+      </div>
+
+      <button type="button" className="md:hidden" onClick={toggleSidebar}>
+        <IoMenuOutline className="size-6" />
+      </button>
     </nav>
   );
 }

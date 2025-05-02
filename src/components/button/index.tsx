@@ -63,9 +63,7 @@ function Button({
 Button.IconLeft = ({ children }: { children: ReactNode }) => <>{children}</>;
 
 // Subcomponente para ícone direito
-Button.IconRight = ({ children }: { children: ReactNode }) => (
-  <span className="ml-2">{children}</span>
-);
+Button.IconRight = ({ children }: { children: ReactNode }) => <>{children}</>;
 
 // Subcomponente para texto (opcional)
 Button.Text = ({ children }: { children: ReactNode }) => (

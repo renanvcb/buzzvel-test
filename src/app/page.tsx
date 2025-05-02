@@ -1,5 +1,12 @@
 import Button from "@/components/button";
-import { FiPlayCircle } from "react-icons/fi";
+import Image from "next/image";
+import { LuCirclePlay } from "react-icons/lu";
+
+import companyLogo1 from "../assets/company-logo-1.svg";
+import companyLogo2 from "../assets/company-logo-2.svg";
+import companyLogo3 from "../assets/company-logo-3.svg";
+import companyLogo4 from "../assets/company-logo-4.svg";
+import companyLogo5 from "../assets/company-logo-5.svg";
 
 export default function Home() {
   return (
@@ -21,7 +28,7 @@ export default function Home() {
           ultricies.
         </p>
 
-        <div className="flex gap-6">
+        <div className="flex gap-8">
           <Button
             size="m"
             filledColor="bg-orange-500"
@@ -32,10 +39,41 @@ export default function Home() {
 
           <Button variant="link" className="gap-4 !text-sm" size="m">
             <Button.IconLeft>
-              <FiPlayCircle className="size-6" />
+              <LuCirclePlay className="size-6" />
               <Button.Text>View Demo</Button.Text>
             </Button.IconLeft>
           </Button>
+        </div>
+
+        <div className="flex flex-col gap-4">
+          <p className="text-slate-600">Trusted by leading companies</p>
+          <div className="flex gap-6">
+            <Image
+              src={companyLogo1}
+              alt="Trusted company 1"
+              className="w-auto h-auto"
+            />
+            <Image
+              src={companyLogo2}
+              alt="Trusted company 2"
+              className="w-auto h-auto"
+            />
+            <Image
+              src={companyLogo3}
+              alt="Trusted company 3"
+              className="w-auto h-auto"
+            />
+            <Image
+              src={companyLogo4}
+              alt="Trusted company 4"
+              className="w-auto h-auto"
+            />
+            <Image
+              src={companyLogo5}
+              alt="Trusted company 5"
+              className="w-auto h-auto"
+            />
+          </div>
         </div>
       </section>
     </div>

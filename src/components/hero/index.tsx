@@ -93,7 +93,7 @@ export default function Hero() {
           alt="Teacher illustration"
           width={400}
           height={400}
-          className="h-auto object-contain max-w-96 md:w-full"
+          className="w-96 h-auto object-contain lg:w-full"
           priority
         />
       </motion.div>

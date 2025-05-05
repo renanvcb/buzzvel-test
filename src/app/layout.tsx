@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   creator: "uTeach",
   publisher: "uTeach",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon.svg",
     shortcut: "/favicon-96x96.png",
     apple: "/apple-touch-icon.png",
   },

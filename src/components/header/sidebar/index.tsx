@@ -10,7 +10,7 @@ export function Sidebar({ isOpen, toggleSidebar }: SidebarProps) {
   return (
     <>
       <div
-        className={`fixed inset-0 z-40 bg-black/40 transition-opacity duration-300 md:hidden ${
+        className={`fixed inset-0 z-40 bg-black/40 transition-opacity duration-300 lg:hidden ${
           isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
         onClick={toggleSidebar}

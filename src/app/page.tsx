@@ -12,7 +12,7 @@ import Hero from "@/components/hero";
 
 export default function Home() {
   return (
-    <div className="py-12 px-4 md:p-20">
+    <div className="py-12 px-4 lg:p-20">
       <Hero />
     </div>
   );

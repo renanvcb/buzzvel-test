@@ -37,7 +37,7 @@ export default function Home() {
             <Button.Text>Sign Up Now</Button.Text>
           </Button>
 
-          <Button variant="link" className="gap-4 !text-sm" size="m">
+          <Button variant="link" className="!text-sm" size="m">
             <Button.IconLeft>
               <LuCirclePlay className="size-6" />
               <Button.Text>View Demo</Button.Text>

@@ -24,7 +24,7 @@ function Button({
 }: ButtonProps) {
   // Classes base (com cn para mesclar classes condicionais)
   const baseClasses = cn(
-    "rounded-lg font-medium transition-all flex items-center justify-center",
+    "rounded-lg font-medium transition-all flex items-center justify-center gap-3",
     className // Permite classes adicionais via prop
   );
 

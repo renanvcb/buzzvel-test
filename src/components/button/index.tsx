@@ -70,4 +70,4 @@ Button.Text = ({ children }: { children: ReactNode }) => (
   <span>{children}</span>
 );
 
-export default Button;
+export { Button };

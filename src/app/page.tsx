@@ -7,19 +7,14 @@ import companyLogo2 from "../assets/company-logo-2.svg";
 import companyLogo3 from "../assets/company-logo-3.svg";
 import companyLogo4 from "../assets/company-logo-4.svg";
 import companyLogo5 from "../assets/company-logo-5.svg";
+import { MarkedText } from "@/components/marked-text";
 
 export default function Home() {
   return (
     <div className="py-12 px-4 md:p-20">
       <section className="flex flex-col gap-6">
         <h1 className="font-bold text-[40px] leading-tight">
-          <span
-            className="relative inline-block bg-no-repeat bg-left-bottom bg-[length:100%_0.6em] pb-1"
-            style={{ backgroundImage: "url('/orange-marker.svg')" }}
-          >
-            Teach
-          </span>{" "}
-          students worldwide
+          <MarkedText>Teach</MarkedText> students worldwide
         </h1>
 
         <p className="md:text-2xl">

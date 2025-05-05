@@ -64,7 +64,7 @@ Because nothing beats the feeling of seeing your local server running on port 30
 
 Live demo? Of course! You can check the deployed project right here:
 
-👉 [https://uteach-landing.vercel.app](https://uteach-landing.vercel.app)
+👉 [https://buzzvel-test-omega.vercel.app/](https://buzzvel-test-omega.vercel.app/)
 
 ---
 

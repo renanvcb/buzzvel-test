@@ -31,9 +31,9 @@ export default function Hero() {
         </h1>
 
         <p className="text-justify md:text-2xl">
-          Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin massa
-          tincidunt viverra lectus pulvinar. Nunc ipsum est pellentesque turpis
-          ultricies.
+          Amet nunc diam orci duis ut sit diam arcu, nec. <br /> Eleifend proin
+          massa tincidunt viverra lectus pulvinar. Nunc ipsum est pellentesque
+          turpis ultricies.
         </p>
 
         <div className="flex gap-10 md:gap-16 lg:gap-20">

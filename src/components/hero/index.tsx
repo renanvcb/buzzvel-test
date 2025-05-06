@@ -19,7 +19,7 @@ export default function Hero() {
   const size = useWindowWidth();
 
   return (
-    <section className="flex flex-col gap-12 lg:grid lg:grid-cols-2 lg:gap-20">
+    <section className="flex flex-col gap-12 lg:grid lg:grid-cols-2 lg:gap-14 xl:gap-20">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -57,33 +57,35 @@ export default function Hero() {
           </Button>
         </div>
 
-        <div className="flex flex-col gap-4">
-          <p className="text-slate-600">Trusted by leading companies</p>
-          <div className="flex gap-6">
+        <div className="flex flex-col gap-4 md:flex-row md:gap-12 md:items-center lg:gap-4 xl:gap-12">
+          <p className="text-slate-600 lg:max-w-36">
+            Trusted by{(size ?? 0) < 1024 ? "" : <br />} leading companies
+          </p>
+          <div className="flex gap-6 md:gap-12 lg:gap-5 xl:gap-12">
             <Image
               src={companyLogo1}
               alt="Trusted company 1"
-              className="w-auto h-auto"
+              className="h-8 w-auto"
             />
             <Image
               src={companyLogo2}
               alt="Trusted company 2"
-              className="w-auto h-auto"
+              className="h-8 w-auto"
             />
             <Image
               src={companyLogo3}
               alt="Trusted company 3"
-              className="w-auto h-auto"
+              className="h-8 w-auto"
             />
             <Image
               src={companyLogo4}
               alt="Trusted company 4"
-              className="w-auto h-auto"
+              className="h-8 w-auto"
             />
             <Image
               src={companyLogo5}
               alt="Trusted company 5"
-              className="w-auto h-auto"
+              className="h-8 w-auto"
             />
           </div>
         </div>

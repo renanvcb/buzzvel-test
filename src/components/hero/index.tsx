@@ -1,5 +1,4 @@
 "use client";
-
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -14,35 +13,43 @@ import companyLogo4 from "@/assets/images/company-logo-4.svg";
 import companyLogo5 from "@/assets/images/company-logo-5.svg";
 import heroIlustration from "@/assets/Images/hero-illustration.png";
 
+import { useWindowWidth } from "@/lib/hooks/useWindowWidth";
+
 export default function Hero() {
+  const size = useWindowWidth();
+
   return (
-    <section className="flex flex-col gap-12 lg:grid lg:grid-cols-2">
+    <section className="flex flex-col gap-12 lg:grid lg:grid-cols-2 lg:gap-20">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="flex flex-col gap-6"
+        className="flex flex-col gap-6 xl:gap-8"
       >
-        <h1 className="font-bold text-[40px] leading-tight">
+        <h1 className="font-bold text-[40px] leading-tight xl:text-7xl xl:font-extrabold">
           <MarkedText>Teach</MarkedText> students worldwide
         </h1>
 
-        <p className="md:text-2xl text-justify">
+        <p className="text-justify md:text-2xl">
           Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin massa
           tincidunt viverra lectus pulvinar. Nunc ipsum est pellentesque turpis
           ultricies.
         </p>
 
-        <div className="flex gap-10">
+        <div className="flex gap-10 md:gap-16 lg:gap-20">
           <Button
-            size="m"
+            size={(size ?? 0) < 1280 ? "m" : "xl"}
             filledColor="bg-orange-500"
             filledHoverColor="hover:bg-orange-600"
           >
             <Button.Text>Sign Up Now</Button.Text>
           </Button>
 
-          <Button variant="link" className="!text-sm" size="m">
+          <Button
+            variant="link"
+            className={(size ?? 0) < 1280 ? "!text-sm" : "!text-xl"}
+            size={(size ?? 0) < 1280 ? "m" : "xl"}
+          >
             <Button.IconLeft>
               <LuCirclePlay className="size-6" />
               <Button.Text>View Demo</Button.Text>

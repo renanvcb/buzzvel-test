@@ -16,7 +16,7 @@ import heroIlustration from "@/assets/Images/hero-illustration.png";
 
 export default function Hero() {
   return (
-    <section className="flex flex-col gap-12 md:grid md:grid-cols-2">
+    <section className="flex flex-col gap-12 lg:grid lg:grid-cols-2">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -27,7 +27,7 @@ export default function Hero() {
           <MarkedText>Teach</MarkedText> students worldwide
         </h1>
 
-        <p className="md:text-2xl">
+        <p className="md:text-2xl text-justify">
           Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin massa
           tincidunt viverra lectus pulvinar. Nunc ipsum est pellentesque turpis
           ultricies.
@@ -93,7 +93,7 @@ export default function Hero() {
           alt="Teacher illustration"
           width={400}
           height={400}
-          className="w-96 h-auto object-contain lg:w-full"
+          className="w-96 h-auto object-contain md:w-2xl lg:w-full"
           priority
         />
       </motion.div>

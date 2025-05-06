@@ -6,11 +6,6 @@ import { MarkedText } from "../marked-text";
 import { Button } from "../button";
 import { LuCirclePlay } from "react-icons/lu";
 
-import companyLogo1 from "@/assets/images/company-logo-1.svg";
-import companyLogo2 from "@/assets/images/company-logo-2.svg";
-import companyLogo3 from "@/assets/images/company-logo-3.svg";
-import companyLogo4 from "@/assets/images/company-logo-4.svg";
-import companyLogo5 from "@/assets/images/company-logo-5.svg";
 import heroIlustration from "@/assets/images/hero-illustration.png";
 
 import { useWindowWidth } from "@/lib/hooks/useWindowWidth";
@@ -63,27 +58,37 @@ export default function Hero() {
           </p>
           <div className="flex gap-6 md:gap-12 lg:gap-5 xl:gap-12">
             <Image
-              src={companyLogo1}
+              width={32}
+              height={32}
+              src="/company-logo-1.svg"
               alt="Trusted company 1"
               className="h-8 w-auto"
             />
             <Image
-              src={companyLogo2}
+              width={32}
+              height={32}
+              src="/company-logo-2.svg"
               alt="Trusted company 2"
               className="h-8 w-auto"
             />
             <Image
-              src={companyLogo3}
+              width={32}
+              height={32}
+              src="/company-logo-3.svg"
               alt="Trusted company 3"
               className="h-8 w-auto"
             />
             <Image
-              src={companyLogo4}
+              width={32}
+              height={32}
+              src="/company-logo-4.svg"
               alt="Trusted company 4"
               className="h-8 w-auto"
             />
             <Image
-              src={companyLogo5}
+              width={32}
+              height={32}
+              src="/company-logo-5.svg"
               alt="Trusted company 5"
               className="h-8 w-auto"
             />

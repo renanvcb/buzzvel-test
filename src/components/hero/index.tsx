@@ -6,11 +6,11 @@ import { MarkedText } from "../marked-text";
 import { Button } from "../button";
 import { LuCirclePlay } from "react-icons/lu";
 
-import companyLogo1 from "../../assets/images/company-logo-1.svg";
-import companyLogo2 from "../../assets/images/company-logo-2.svg";
-import companyLogo3 from "../../assets/images/company-logo-3.svg";
-import companyLogo4 from "../../assets/images/company-logo-4.svg";
-import companyLogo5 from "../../assets/images/company-logo-5.svg";
+import companyLogo1 from "@/assets/images/company-logo-1.svg";
+import companyLogo2 from "@/assets/images/company-logo-2.svg";
+import companyLogo3 from "@/assets/images/company-logo-3.svg";
+import companyLogo4 from "@/assets/images/company-logo-4.svg";
+import companyLogo5 from "@/assets/images/company-logo-5.svg";
 import heroIlustration from "@/assets/images/hero-illustration.png";
 
 import { useWindowWidth } from "@/lib/hooks/useWindowWidth";

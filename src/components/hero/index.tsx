@@ -6,8 +6,6 @@ import { MarkedText } from "../marked-text";
 import { Button } from "../button";
 import { LuCirclePlay } from "react-icons/lu";
 
-import heroIlustration from "@/assets/images/hero-illustration.png";
-
 import { useWindowWidth } from "@/lib/hooks/useWindowWidth";
 
 export default function Hero() {
@@ -103,7 +101,7 @@ export default function Hero() {
         className="relative flex justify-center"
       >
         <Image
-          src={heroIlustration}
+          src="/hero-illustration.png"
           alt="Teacher illustration"
           width={400}
           height={400}

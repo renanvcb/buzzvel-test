@@ -60,35 +60,35 @@ export function Hero() {
               height={32}
               src="/company-logo-1.svg"
               alt="Trusted company 1"
-              className="h-8 w-auto"
+              className="h-auto w-auto"
             />
             <Image
               width={32}
               height={32}
               src="/company-logo-2.svg"
               alt="Trusted company 2"
-              className="h-8 w-auto"
+              className="h-auto w-auto"
             />
             <Image
               width={32}
               height={32}
               src="/company-logo-3.svg"
               alt="Trusted company 3"
-              className="h-8 w-auto"
+              className="h-auto w-auto"
             />
             <Image
               width={32}
               height={32}
               src="/company-logo-4.svg"
               alt="Trusted company 4"
-              className="h-8 w-auto"
+              className="h-auto w-auto"
             />
             <Image
               width={32}
               height={32}
               src="/company-logo-5.svg"
               alt="Trusted company 5"
-              className="h-8 w-auto"
+              className="h-auto w-auto"
             />
           </div>
         </div>

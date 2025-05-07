@@ -3,6 +3,7 @@ import { Button } from "../button";
 import { MarkedText } from "../marked-text";
 import { FaCheck, FaArrowRight } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import { ListItem } from "./list-item";
 
 export function Features() {
   return (
@@ -35,24 +36,11 @@ export function Features() {
 
         {/* List */}
         <div>
-          <div className="flex items-start gap-3">
-            <FaCheck className="mt-1" />
-            <p className="text-xl">
-              Est et in pharetra magna adipiscing ornare aliquam.
-            </p>
-          </div>
-          <div className="flex items-start gap-3">
-            <FaCheck className="mt-1" />
-            <p className="text-xl">
-              Tellus arcu sed consequat ac velit ut eu blandit.
-            </p>
-          </div>
-          <div className="flex items-start gap-3">
-            <FaCheck className="mt-1" />
-            <p className="text-xl">
-              Ullamcorper ornare in et egestas dolor orci.
-            </p>
-          </div>
+          <ListItem>
+            Est et in pharetra magna adipiscing ornare aliquam.
+          </ListItem>
+          <ListItem>Tellus arcu sed consequat ac velit ut eu blandit.</ListItem>
+          <ListItem>Ullamcorper ornare in et egestas dolor orci.</ListItem>
         </div>
 
         <div>

@@ -1,7 +1,7 @@
 "use client";
 import { Button } from "../button";
 import { MarkedText } from "../marked-text";
-import { FaCheck, FaArrowRight } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import { ListItem } from "./list-item";
 
@@ -12,7 +12,10 @@ export function Features() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
       viewport={{ once: true, amount: 0.5 }}
-      className="bg-[url(/app-bg.png)] bg-no-repeat flex flex-col gap-8"
+      className="
+        bg-[url(/app-bg.png)] bg-no-repeat bg-contain bg-bottom-left flex flex-col gap-8 h-dvh
+        lg:max-h-[600px] lg:grid lg:grid-cols-2 lg:bg-[url(/app-bg-web.png)] lg:bg-center
+      "
     >
       {/* Top section */}
       <motion.div
@@ -20,7 +23,7 @@ export function Features() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true, amount: 0.5 }}
-        className="flex flex-col gap-8"
+        className="flex flex-col gap-8 lg:self-center"
       >
         {/* Section Text */}
         <div className="flex flex-col gap-6">
@@ -82,8 +85,8 @@ export function Features() {
           </div>
 
           {/* Grid container positioned on top */}
-          <div className="absolute top-[195px] -right-10 grid grid-cols-2 gap-4 p-4 md:grid-cols-3 bg-white shadow-lg rounded-lg">
-            <div className="shadow-md/30 shadow-black p-4 space-y-2">
+          <div className="absolute top-48 -right-10 grid grid-cols-2 gap-4 p-4 md:grid-cols-3 md:top-96 md:-left-10 md:right-0 lg:top-48 xl:top-72 2xl:top-96">
+            <div className="shadow-md/30 shadow-black p-4 space-y-2 bg-white rounded-lg">
               <div className="bg-purple-100 text-purple-800 px-2 py-1 rounded-sm inline-block">
                 Featured
               </div>
@@ -101,7 +104,7 @@ export function Features() {
               </div>
             </div>
 
-            <div className="shadow-md/30 shadow-black p-4 space-y-2">
+            <div className="shadow-md/30 shadow-black p-4 space-y-2 bg-white rounded-lg">
               <div className="bg-blue-100 text-blue-800 px-2 py-1 rounded-sm inline-block">
                 Popular
               </div>
@@ -119,7 +122,7 @@ export function Features() {
               </div>
             </div>
 
-            <div className="hidden md:block shadow-md/30 shadow-black p-4 space-y-2">
+            <div className="hidden md:block shadow-md/30 shadow-black p-4 space-y-2 bg-white rounded-lg">
               <div className="bg-green-100 text-green-800 px-2 py-1 rounded-sm inline-block">
                 New
               </div>

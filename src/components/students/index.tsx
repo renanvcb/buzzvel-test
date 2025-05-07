@@ -20,8 +20,20 @@ export function Students() {
         viewport={{ once: true, amount: 0.5 }}
         className="px-4 space-y-6 lg:px-0 lg:order-2"
       >
-        <h2 className="text-2xl font-bold xl:font-extrabold xl:text-[56px]">
-          Meet international students & teachers
+        <h2 className="text-2xl font-bold xl:font-extrabold xl:text-[56px] relative">
+          Meet internatio
+          <span className="relative inline-block">
+            <span
+              className="absolute -top-4 w-full h-full max-w-12 bg-no-repeat bg-contain xl:-top-6 xl:left-1"
+              style={{
+                backgroundImage: "url('/plane-departure.svg')",
+                zIndex: -1,
+                transform: "scale(1.5)", // Adjust scale as needed
+              }}
+            />
+            <span className="relative z-10">na</span>
+          </span>
+          l students & teachers
         </h2>
         <p className="xl:text-xl">
           Morbi sit egestas dignissim pharetra, sed amet. Tempus justo senectus

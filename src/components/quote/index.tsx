@@ -9,7 +9,7 @@ export function Quote() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
       viewport={{ once: true, amount: 0.5 }}
-      className="bg-yellow-400 py-12"
+      className="bg-yellow-400 py-12 lg:grid lg:grid-cols-2 lg:gap-2 lg:px-20 lg:items-center"
     >
       <motion.div
         className="space-y-12"
@@ -18,7 +18,7 @@ export function Quote() {
         transition={{ duration: 0.6 }}
         viewport={{ once: true, amount: 0.5 }}
       >
-        <div className="px-4 text-lg space-y-4">
+        <div className="px-4 text-lg space-y-4 lg:text-2xl lg:px-0">
           <p className="leading-loose">
             Id urna, nisl, ut quam. Diam suspendisse fringilla quam arcu mattis
             est velit in. Nibh in purus sit convallis phasellus ut. At vel erat
@@ -45,7 +45,7 @@ export function Quote() {
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, delay: 0.2 }}
         viewport={{ once: true, amount: 0.5 }}
-        className="relative flex justify-center"
+        className="flex justify-center"
       >
         <Image
           src="/quote-illustration.png"

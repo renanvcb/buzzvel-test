@@ -47,7 +47,7 @@ export function Features() {
         </div>
 
         <div>
-          <Button variant="link" size="m">
+          <Button variant="link" size="m" className="md:text-xl">
             <Button.Text>Find more abou the app</Button.Text>
             <Button.IconRight>
               <FaArrowRight />

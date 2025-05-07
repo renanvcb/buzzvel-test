@@ -8,11 +8,11 @@ import { LuCirclePlay } from "react-icons/lu";
 
 import { useWindowWidth } from "@/lib/hooks/useWindowWidth";
 
-export default function Hero() {
+export function Hero() {
   const size = useWindowWidth();
 
   return (
-    <section className="flex flex-col gap-12 lg:grid lg:grid-cols-2 lg:gap-14 xl:gap-20">
+    <section className="flex flex-col gap-12 px-4 md:px-8 lg:px-20 lg:grid lg:grid-cols-2 lg:gap-14 xl:gap-20">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}

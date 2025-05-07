@@ -14,7 +14,7 @@ export function Features() {
       viewport={{ once: true, amount: 0.5 }}
       className="
         bg-[url(/app-bg.png)] bg-no-repeat bg-contain bg-bottom-left flex flex-col gap-8 h-dvh
-        lg:max-h-[600px] lg:grid lg:grid-cols-2 lg:bg-[url(/app-bg-web.png)] lg:bg-center
+        lg:px-20 lg:max-h-[600px] lg:grid lg:grid-cols-2 lg:bg-[url(/app-bg-web.png)] lg:bg-center
       "
     >
       {/* Top section */}
@@ -23,7 +23,7 @@ export function Features() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true, amount: 0.5 }}
-        className="flex flex-col gap-8 lg:self-center"
+        className="flex px-4 flex-col gap-8 lg:px-0 lg:self-center"
       >
         {/* Section Text */}
         <div className="flex flex-col gap-6">
@@ -62,7 +62,7 @@ export function Features() {
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, delay: 0.2 }}
         viewport={{ once: true, amount: 0.4 }}
-        className="w-full"
+        className="w-full px-4 lg:px-0"
       >
         <div className="relative mx-4 border-8 border-white bg-white rounded-xl shadow-xs shadow-black">
           {/* Iframe container */}

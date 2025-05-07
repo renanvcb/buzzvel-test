@@ -61,17 +61,24 @@ export function Features() {
         viewport={{ once: true, amount: 0.4 }}
         className="w-full"
       >
-        <div className="aspect-video w-full overflow-hidden rounded-xl shadow-lg">
-          <iframe
-            id="video"
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ" // <- Replace with real video link
-            title="App Demo Video"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className="w-full h-full"
-          />
+        <div className="border-8 border-white bg-white rounded-xl shadow-lg shadow-black">
+          <div className="py-2.5 flex gap-1.5">
+            <div className="size-2.5 bg-rose-600 rounded-full" />
+            <div className="size-2.5 bg-amber-400 rounded-full" />
+            <div className="size-2.5 bg-green-500 rounded-full" />
+          </div>
+          <div className="aspect-video w-full overflow-hidden rounded-b-xl">
+            <iframe
+              id="video"
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ" // <- Replace with real video link
+              title="App Demo Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full"
+            />
+          </div>
         </div>
       </motion.div>
     </motion.section>

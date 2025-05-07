@@ -1,6 +1,7 @@
 import { Features } from "@/components/features";
 import { Hero } from "@/components/hero";
 import { Quote } from "@/components/quote";
+import { Stats } from "@/components/stats";
 import { Students } from "@/components/students";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <Features />
       <Quote />
       <Students />
+      <Stats />
     </div>
   );
 }

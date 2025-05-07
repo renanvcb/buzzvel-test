@@ -19,7 +19,7 @@ export function Header() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="flex items-center justify-between p-4 bg-white lg:py-6 lg:px-20"
+        className="flex items-center p-4 justify-between lg:py-6 lg:px-20"
       >
         <div className="flex items-center">
           <Link href="/">

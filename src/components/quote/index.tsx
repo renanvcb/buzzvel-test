@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export function Quote() {
   return (
@@ -37,6 +38,23 @@ export function Quote() {
           <div className="size-2 bg-white rounded-full" />
           <div className="size-2 bg-white rounded-full" />
         </div>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        viewport={{ once: true, amount: 0.5 }}
+        className="relative flex justify-center"
+      >
+        <Image
+          src="/quote-illustration.png"
+          alt="A happy womam smiling"
+          width={625}
+          height={549}
+          className="w-96 h-auto object-contain md:w-2xl lg:w-full lg:max-h-[544px]"
+          priority
+        />
       </motion.div>
     </motion.section>
   );

@@ -8,9 +8,9 @@ interface ButtonProps extends ComponentPropsWithoutRef<"button"> {
   size?: ButtonSize;
   variant?: ButtonVariant;
   children?: ReactNode;
-  // Novas props para cores customizáveis (opcionais)
-  filledColor?: string; // Ex: "bg-blue-600"
-  filledHoverColor?: string; // Ex: "hover:bg-blue-700"
+  // New props for customizable colors (optional)
+  filledColor?: string; // Example: "bg-blue-600"
+  filledHoverColor?: string; // Example: "hover:bg-blue-700"
 }
 
 function Button({
@@ -22,13 +22,13 @@ function Button({
   className,
   ...props
 }: ButtonProps) {
-  // Classes base (com cn para mesclar classes condicionais)
+  // Base classes (with cn to merge conditional classes)
   const baseClasses = cn(
     "rounded-lg font-medium transition-all flex items-center justify-center gap-3",
-    className // Permite classes adicionais via prop
+    className // Allows additional classes via prop
   );
 
-  // Mapeamento de tamanhos
+  // Size mapping
   const sizeClasses = {
     s: "px-4 py-2 text-sm",
     m: "px-6 py-3 text-base",
@@ -36,11 +36,11 @@ function Button({
     xl: "px-10 py-5 font-bold text-2xl",
   };
 
-  // Mapeamento de estilos (agora com cn e cores custom)
+  // Style mapping (now with cn and custom colors)
   const variantClasses = cn({
-    // Estilo "filled" com cores customizáveis
+    // "filled" style with customizable colors
     [cn(filledColor, filledHoverColor, "text-white")]: variant === "filled",
-    // Outros estilos fixos
+    // Other fixed styles
     "border border-blue-600 text-blue-600 hover:bg-blue-50":
       variant === "outline",
     "bg-gray-300 text-gray-500 cursor-not-allowed": variant === "disabled",
@@ -59,13 +59,13 @@ function Button({
   );
 }
 
-// Subcomponente para ícone esquerdo
+// Subcomponent for left icon
 Button.IconLeft = ({ children }: { children: ReactNode }) => <>{children}</>;
 
-// Subcomponente para ícone direito
+// Subcomponent for right icon
 Button.IconRight = ({ children }: { children: ReactNode }) => <>{children}</>;
 
-// Subcomponente para texto (opcional)
+// Subcomponent for text (optional)
 Button.Text = ({ children }: { children: ReactNode }) => (
   <span>{children}</span>
 );

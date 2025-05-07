@@ -1,4 +1,6 @@
+import { Button } from "@/components/button";
 import Link from "next/link";
+import { FaChevronDown } from "react-icons/fa6";
 import { IoCloseOutline } from "react-icons/io5";
 
 interface SidebarProps {
@@ -30,21 +32,49 @@ export function Sidebar({ isOpen, toggleSidebar }: SidebarProps) {
           <IoCloseOutline className="size-6" />
         </button>
 
-        <nav className="mt-10">
+        <nav className="mt-10 space-y-12">
+          <div className="flex flex-col gap-4">
+            <Button
+              variant="link"
+              className="!text-black"
+              onClick={toggleSidebar}
+            >
+              <Button.Text>Log In</Button.Text>
+            </Button>
+            <Button
+              variant="outline"
+              className="!border-black !text-black"
+              size="s"
+              onClick={toggleSidebar}
+            >
+              <Button.Text>Sign Up Now</Button.Text>
+            </Button>
+          </div>
+
           <ul className="space-y-2">
             <li>
               <Link href="#" className="block" onClick={toggleSidebar}>
-                Home
+                Products
               </Link>
             </li>
             <li>
               <Link href="#" className="block" onClick={toggleSidebar}>
-                Sobre
+                Solutions
               </Link>
             </li>
             <li>
               <Link href="#" className="block" onClick={toggleSidebar}>
-                Contato
+                Pricing
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="#"
+                className="flex items-center gap-2"
+                onClick={toggleSidebar}
+              >
+                Resources
+                <FaChevronDown />
               </Link>
             </li>
           </ul>

@@ -28,7 +28,7 @@ This landing page project runs on the following:
 
 ## ✅ Pixel-perfect Promise
 
-We solemnly swear (and sometimes cry) that this project is being built **faithful to the prototype** and **in line with the challenge requirements**. No weird margins. No rogue buttons. Pure Buzzvel energy.
+We solemnly swear (and sometimes cry) that this project is being built **faithful to the prototype** and **in line with the challenge requirements**. No weird margins. No rogue buttons. ~~Maybe some backgrounds and some items positioning.~~ Pure Buzzvel energy.
 
 ![This is fine](https://media.giphy.com/media/3o7TKMt1VVNkHV2PaE/giphy.gif)
 

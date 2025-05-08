@@ -18,11 +18,11 @@ This landing page project runs on the following:
 
 ## 🗓️ Project Schedule
 
-| Stage                        | Status                     |
-| ---------------------------- | -------------------------- |
-| 📱 Mobile-first development  | ⏳ Ongoing...              |
-| 🖥️ Large screen enhancements | ❌ Not yet, but soon™      |
-| 🛠️ Refinements & tweaks      | 🙈 Not yet, don’t judge me |
+| Stage                        | Status                                         |
+| ---------------------------- | ---------------------------------------------- |
+| 📱 Mobile-first development  | 🆗 Done... But not all sections                |
+| 🖥️ Large screen enhancements | 🙆‍♂️ Not all components. But they are so pretty! |
+| 🛠️ Refinements & tweaks      | 🙈 Done for the components completed           |
 
 ---
 

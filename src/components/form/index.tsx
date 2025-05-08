@@ -49,8 +49,8 @@ export function Form() {
         </form>
         <Button
           size={(size ?? 0) < 1280 ? "l" : "xl"}
-          filledColor="bg-zinc-900"
-          filledHoverColor="hover:bg-zinc-800"
+          filledColor="bg-slate-900"
+          filledHoverColor="hover:bg-slate-800"
         >
           <Button.Text>Request Demo</Button.Text>
         </Button>

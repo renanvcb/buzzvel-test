@@ -1,4 +1,5 @@
 import { Features } from "@/components/features";
+import { Form } from "@/components/form";
 import { Hero } from "@/components/hero";
 import { JoinUs } from "@/components/join-us";
 import { Quote } from "@/components/quote";
@@ -14,6 +15,7 @@ export default function Home() {
       <Students />
       <Stats />
       <JoinUs />
+      <Form />
     </div>
   );
 }

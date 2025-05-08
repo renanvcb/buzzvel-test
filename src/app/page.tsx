@@ -9,7 +9,7 @@ import { Students } from "@/components/students";
 
 export default function Home() {
   return (
-    <div className="py-12 space-y-14">
+    <div className="pt-12 space-y-14">
       <Hero />
       <Features />
       <Quote />

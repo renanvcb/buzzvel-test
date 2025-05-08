@@ -14,7 +14,7 @@ export function JoinUs() {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
       viewport={{ once: true, amount: 0.5 }}
-      className="p-4 bg-yellow-400 -mt-14 flex flex-col items-center gap-8 md:flex-row md:p-0 md:py-4 md:gap-0 lg:py-8 xl:py-14"
+      className="p-4 bg-yellow-400 -mt-14 flex flex-col items-center justify-between gap-8 md:flex-row md:p-0 md:py-4 md:gap-0 lg:py-8 xl:py-14"
     >
       <Image
         src="/join-illustration-first-mobile.png"

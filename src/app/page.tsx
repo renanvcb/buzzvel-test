@@ -1,4 +1,5 @@
 import { Features } from "@/components/features";
+import { Footer } from "@/components/footer";
 import { Form } from "@/components/form";
 import { Hero } from "@/components/hero";
 import { JoinUs } from "@/components/join-us";
@@ -16,6 +17,7 @@ export default function Home() {
       <Stats />
       <JoinUs />
       <Form />
+      <Footer />
     </div>
   );
 }

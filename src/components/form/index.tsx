@@ -2,20 +2,24 @@
 import { motion } from "framer-motion";
 import { Button } from "../button";
 
+import { useWindowWidth } from "@/lib/hooks/useWindowWidth";
+
 export function Form() {
+  const size = useWindowWidth();
+
   return (
     <motion.section
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
       viewport={{ once: true, amount: 0.5 }}
-      className="px-4 py-12 -mt-14 bg-orange-600 text-white"
+      className="px-4 py-12 -mt-14 bg-orange-600 text-white flex justify-center"
     >
       <div className="flex flex-col items-center gap-8">
-        <h2 className="text-center font-bold text-3xl">
+        <h2 className="text-center font-bold text-3xl lg:font-extrabold lg:text-[56px]">
           Ready for your next project?
         </h2>
-        <p className="text-center text-lg">
+        <p className="text-center text-lg lg:font-light lg:text-3xl">
           Sit elit feugiat turpis sed integer integer accumsan turpis.
         </p>
 
@@ -43,7 +47,11 @@ export function Form() {
             placeholder="What do you say?"
           />
         </form>
-        <Button size="l" className="">
+        <Button
+          size={(size ?? 0) < 1280 ? "l" : "xl"}
+          filledColor="bg-zinc-900"
+          filledHoverColor="hover:bg-zinc-800"
+        >
           <Button.Text>Request Demo</Button.Text>
         </Button>
       </div>
